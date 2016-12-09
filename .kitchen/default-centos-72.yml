@@ -1,0 +1,5 @@
+---
+hostname: 127.0.0.1
+port: '2222'
+username: vagrant
+ssh_key: C:/opscode/chef-repo/cookbooks/mysql/.kitchen/kitchen-vagrant/kitchen-mysql-default-centos-72/.vagrant/machines/default/virtualbox/private_key

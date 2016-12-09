@@ -6,18 +6,51 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-Mysql script to check and start the service
-include_recipe 'mysql::server'
-include_recipe 'mysql::ruby'
-include_recipe 'database'
+
+# include_recipe 'mysql'
+# include_recipe 'database'
+
+rpm_package 'mysql-server' do
+  source "#{Chef::Config[:file_cache_path]}/MySQL-server-5.5.52-1.el6.x86_64.rpm"
+  action :install
+end
+
+rpm_package 'mysql-client' do
+  source "#{Chef::Config[:file_cache_path]}/MySQL-client-5.5.52-1.el6.x86_64.rpm"
+  action :install
+end
+
+rpm_package 'mysql-devel' do
+  source "#{Chef::Config[:file_cache_path]}/MySQL-devel-5.5.52-1.el6.x86_64.rpm"
+  action :install
+end
+
+execute "mysql service" do
+		user "root"
+		group "root"
+		command "chkconfig --add mysql"
+		action :run
+    end
+
+
+# Configure the MySQL client.
+
+# Configure the MySQL service.
+# Install the mysql2 Ruby gem.
+mysql2_chef_gem 'default' do
+  action :install
+end
 
 # Create a path to the SQL file in the Chef cache.
 create_tables_script_path = File.join(Chef::Config[:file_cache_path], 'create-tables.sql')
 
 connection_params = {
-  :username => node['database']['root_username']
-  :password => node['database']['server_root_password']
+  :host => node['database']['host'],
+  :username => node['database']['root_username'],
+  :password => node['database']['root_password']
 }
+
+# Create the database instance.
 
 mysql_database node['database']['dbname'] do
   connection connection_params

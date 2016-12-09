@@ -1,2 +1,4 @@
  source 'https://supermarket.chef.io'
- cookbook 'mysql', path: 'C:\opscode\chef-repo\cookbooks\mysql'
+ metadata
+ cookbook 'database'
+ cookbook 'mysql2_chef_gem', '~> 1.1'

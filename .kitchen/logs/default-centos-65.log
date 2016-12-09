@@ -1,0 +1,104 @@
+I, [2016-09-05T11:50:24.691702 #9288]  INFO -- default-centos-65: -----> Creating <default-centos-65>...
+I, [2016-09-05T11:50:28.339932 #9288]  INFO -- default-centos-65: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2016-09-05T11:50:28.656495 #9288]  INFO -- default-centos-65: ==> default: Box 'bento/centos-6.5' could not be found. Attempting to find and install...
+I, [2016-09-05T11:50:28.656495 #9288]  INFO -- default-centos-65:     default: Box Provider: virtualbox
+I, [2016-09-05T11:50:28.656495 #9288]  INFO -- default-centos-65:     default: Box Version: >= 0
+I, [2016-09-05T11:50:33.007865 #9288]  INFO -- default-centos-65: The box 'bento/centos-6.5' could not be found or
+I, [2016-09-05T11:50:33.007865 #9288]  INFO -- default-centos-65: could not be accessed in the remote catalog. If this is a private
+I, [2016-09-05T11:50:33.007865 #9288]  INFO -- default-centos-65: box on HashiCorp's Atlas, please verify you're logged in via
+I, [2016-09-05T11:50:33.007865 #9288]  INFO -- default-centos-65: `vagrant login`. Also, please double-check the name. The expanded
+I, [2016-09-05T11:50:33.007865 #9288]  INFO -- default-centos-65: URL and error message are shown below:
+I, [2016-09-05T11:50:33.008365 #9288]  INFO -- default-centos-65: 
+I, [2016-09-05T11:50:33.008365 #9288]  INFO -- default-centos-65: URL: ["https://atlas.hashicorp.com/bento/centos-6.5"]
+I, [2016-09-05T11:50:33.008365 #9288]  INFO -- default-centos-65: Error: The requested URL returned error: 404 Not Found
+E, [2016-09-05T11:50:33.079879 #9288] ERROR -- default-centos-65: Create failed on instance <default-centos-65>.
+E, [2016-09-05T11:50:33.080380 #9288] ERROR -- default-centos-65: ------Exception-------
+E, [2016-09-05T11:50:33.080380 #9288] ERROR -- default-centos-65: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2016-09-05T11:50:33.080380 #9288] ERROR -- default-centos-65: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'bento/centos-6.5' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+STDERR: The box 'bento/centos-6.5' could not be found or
+could not be accessed in the remote catalog. If this is a private
+box on HashiCorp's Atlas, please verify you're logged in via
+`vagrant login`. Also, please double-check the name. The expanded
+URL and error message are shown below:
+
+URL: ["https://atlas.hashicorp.com/bento/centos-6.5"]
+Error: The requested URL returned error: 404 Not Found
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2016-09-05T11:50:33.080380 #9288] ERROR -- default-centos-65: ----------------------
+E, [2016-09-05T11:50:33.080380 #9288] ERROR -- default-centos-65: ------Backtrace-------
+E, [2016-09-05T11:50:33.080380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/shell_out.rb:73:in `rescue in run_command'
+E, [2016-09-05T11:50:33.080880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/shell_out.rb:61:in `run_command'
+E, [2016-09-05T11:50:33.080880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:343:in `run_command'
+E, [2016-09-05T11:50:33.080880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:302:in `run'
+E, [2016-09-05T11:50:33.080880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:373:in `run_vagrant_up'
+E, [2016-09-05T11:50:33.080880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:96:in `create'
+E, [2016-09-05T11:50:33.080880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:449:in `public_send'
+E, [2016-09-05T11:50:33.080880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:449:in `block in perform_action'
+E, [2016-09-05T11:50:33.080880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:510:in `call'
+E, [2016-09-05T11:50:33.080880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:510:in `block in synchronize_or_call'
+E, [2016-09-05T11:50:33.081380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:508:in `synchronize'
+E, [2016-09-05T11:50:33.081380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:508:in `synchronize_or_call'
+E, [2016-09-05T11:50:33.081380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-09-05T11:50:33.081380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-05T11:50:33.081380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:477:in `action'
+E, [2016-09-05T11:50:33.081380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:449:in `perform_action'
+E, [2016-09-05T11:50:33.081380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:359:in `create_action'
+E, [2016-09-05T11:50:33.081380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-09-05T11:50:33.081380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:347:in `each'
+E, [2016-09-05T11:50:33.081380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-09-05T11:50:33.081880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:127:in `create'
+E, [2016-09-05T11:50:33.081880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-09-05T11:50:33.081880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-09-05T11:50:33.081880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-09-05T11:50:33.081880 #9288] ERROR -- default-centos-65: ----End Backtrace-----
+E, [2016-09-05T11:50:33.081880 #9288] ERROR -- default-centos-65: ---Nested Exception---
+E, [2016-09-05T11:50:33.081880 #9288] ERROR -- default-centos-65: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2016-09-05T11:50:33.081880 #9288] ERROR -- default-centos-65: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'bento/centos-6.5' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+STDERR: The box 'bento/centos-6.5' could not be found or
+could not be accessed in the remote catalog. If this is a private
+box on HashiCorp's Atlas, please verify you're logged in via
+`vagrant login`. Also, please double-check the name. The expanded
+URL and error message are shown below:
+
+URL: ["https://atlas.hashicorp.com/bento/centos-6.5"]
+Error: The requested URL returned error: 404 Not Found
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2016-09-05T11:50:33.081880 #9288] ERROR -- default-centos-65: ----------------------
+E, [2016-09-05T11:50:33.081880 #9288] ERROR -- default-centos-65: ------Backtrace-------
+E, [2016-09-05T11:50:33.082380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/shell_out.rb:73:in `rescue in run_command'
+E, [2016-09-05T11:50:33.082380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/shell_out.rb:61:in `run_command'
+E, [2016-09-05T11:50:33.082380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:343:in `run_command'
+E, [2016-09-05T11:50:33.082380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:302:in `run'
+E, [2016-09-05T11:50:33.082380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:373:in `run_vagrant_up'
+E, [2016-09-05T11:50:33.082380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:96:in `create'
+E, [2016-09-05T11:50:33.082380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:449:in `public_send'
+E, [2016-09-05T11:50:33.082380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:449:in `block in perform_action'
+E, [2016-09-05T11:50:33.082380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:510:in `call'
+E, [2016-09-05T11:50:33.082880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:510:in `block in synchronize_or_call'
+E, [2016-09-05T11:50:33.082880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:508:in `synchronize'
+E, [2016-09-05T11:50:33.082880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:508:in `synchronize_or_call'
+E, [2016-09-05T11:50:33.082880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-09-05T11:50:33.082880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-05T11:50:33.082880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:477:in `action'
+E, [2016-09-05T11:50:33.082880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:449:in `perform_action'
+E, [2016-09-05T11:50:33.082880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:359:in `create_action'
+E, [2016-09-05T11:50:33.082880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-09-05T11:50:33.082880 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:347:in `each'
+E, [2016-09-05T11:50:33.083380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-09-05T11:50:33.083380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:127:in `create'
+E, [2016-09-05T11:50:33.083380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-09-05T11:50:33.083380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-09-05T11:50:33.083380 #9288] ERROR -- default-centos-65: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-09-05T11:50:33.083380 #9288] ERROR -- default-centos-65: ----End Backtrace-----

@@ -1,0 +1,126 @@
+I, [2016-09-05T14:41:05.450270 #12944]  INFO -- default-centos-67: -----> Converging <default-centos-67>...
+I, [2016-09-05T14:41:05.457271 #12944]  INFO -- default-centos-67: Preparing files for transfer
+I, [2016-09-05T14:41:05.459271 #12944]  INFO -- default-centos-67: Preparing dna.json
+I, [2016-09-05T14:41:05.468272 #12944]  INFO -- default-centos-67: Resolving cookbook dependencies with Berkshelf 4.3.5...
+I, [2016-09-05T14:41:12.249633 #12944]  INFO -- default-centos-67: Removing non-cookbook files before transfer
+I, [2016-09-05T14:41:12.695690 #12944]  INFO -- default-centos-67: Preparing validation.pem
+I, [2016-09-05T14:41:12.703191 #12944]  INFO -- default-centos-67: Preparing client.rb
+I, [2016-09-05T14:41:14.141874 #12944]  INFO -- default-centos-67: -----> Chef Omnibus installation detected (install only if missing)
+I, [2016-09-05T14:41:14.319396 #12944]  INFO -- default-centos-67: Transferring files to <default-centos-67>
+I, [2016-09-05T14:41:30.563459 #12944]  INFO -- default-centos-67: Starting Chef Client, version 12.13.37
+I, [2016-09-05T14:41:39.633111 #12944]  INFO -- default-centos-67: resolving cookbooks for run list: ["mysql::default"]
+I, [2016-09-05T14:41:41.219312 #12944]  INFO -- default-centos-67: Synchronizing Cookbooks:
+I, [2016-09-05T14:41:41.320825 #12944]  INFO -- default-centos-67:   - mysql (0.1.0)
+I, [2016-09-05T14:41:41.322825 #12944]  INFO -- default-centos-67:   - database (5.1.2)
+I, [2016-09-05T14:41:41.411836 #12944]  INFO -- default-centos-67:   - postgresql (4.0.6)
+I, [2016-09-05T14:41:41.434839 #12944]  INFO -- default-centos-67:   - apt (4.0.2)
+I, [2016-09-05T14:41:41.451842 #12944]  INFO -- default-centos-67:   - build-essential (6.0.4)
+I, [2016-09-05T14:41:41.719376 #12944]  INFO -- default-centos-67:   - openssl (4.4.0)
+I, [2016-09-05T14:41:41.801386 #12944]  INFO -- default-centos-67:   - compat_resource (12.10.7)
+I, [2016-09-05T14:41:41.814888 #12944]  INFO -- default-centos-67:   - seven_zip (2.0.1)
+I, [2016-09-05T14:41:41.828889 #12944]  INFO -- default-centos-67:   - chef-sugar (3.4.0)
+I, [2016-09-05T14:41:41.834890 #12944]  INFO -- default-centos-67:   - mingw (1.2.4)
+I, [2016-09-05T14:41:41.897898 #12944]  INFO -- default-centos-67:   - windows (1.44.3)
+I, [2016-09-05T14:41:41.901399 #12944]  INFO -- default-centos-67:   - chef_handler (1.4.0)
+I, [2016-09-05T14:41:41.914400 #12944]  INFO -- default-centos-67: Installing Cookbook Gems:
+I, [2016-09-05T14:41:41.917401 #12944]  INFO -- default-centos-67: Compiling Cookbooks...
+I, [2016-09-05T14:41:42.222439 #12944]  INFO -- default-centos-67: [2016-09-05T09:11:41+00:00] WARN: Chef::Provider::AptRepository already exists!  Cannot create deprecation class for LWRP provider apt_repository from cookbook apt
+I, [2016-09-05T14:41:42.238441 #12944]  INFO -- default-centos-67: [2016-09-05T09:11:41+00:00] WARN: AptRepository already exists!  Deprecation class overwrites Custom resource apt_repository from cookbook apt
+I, [2016-09-05T14:41:42.363957 #12944]  INFO -- default-centos-67: 
+I, [2016-09-05T14:41:42.364457 #12944]  INFO -- default-centos-67: ================================================================================
+I, [2016-09-05T14:41:42.364457 #12944]  INFO -- default-centos-67: Recipe Compile Error in /tmp/kitchen/cache/cookbooks/mysql/recipes/default.rb
+I, [2016-09-05T14:41:42.364457 #12944]  INFO -- default-centos-67: ================================================================================
+I, [2016-09-05T14:41:42.364457 #12944]  INFO -- default-centos-67: 
+I, [2016-09-05T14:41:42.364457 #12944]  INFO -- default-centos-67: NameError
+I, [2016-09-05T14:41:42.364457 #12944]  INFO -- default-centos-67: ---------
+I, [2016-09-05T14:41:42.364457 #12944]  INFO -- default-centos-67: No resource, method, or local variable named `check' for `Chef::Recipe "default"'
+I, [2016-09-05T14:41:42.364457 #12944]  INFO -- default-centos-67: 
+I, [2016-09-05T14:41:42.364457 #12944]  INFO -- default-centos-67: Cookbook Trace:
+I, [2016-09-05T14:41:42.364957 #12944]  INFO -- default-centos-67: ---------------
+I, [2016-09-05T14:41:42.364957 #12944]  INFO -- default-centos-67:   /tmp/kitchen/cache/cookbooks/mysql/recipes/default.rb:9:in `from_file'
+I, [2016-09-05T14:41:42.364957 #12944]  INFO -- default-centos-67: 
+I, [2016-09-05T14:41:42.364957 #12944]  INFO -- default-centos-67: Relevant File Content:
+I, [2016-09-05T14:41:42.364957 #12944]  INFO -- default-centos-67: ----------------------
+I, [2016-09-05T14:41:42.364957 #12944]  INFO -- default-centos-67: /tmp/kitchen/cache/cookbooks/mysql/recipes/default.rb:
+I, [2016-09-05T14:41:42.365458 #12944]  INFO -- default-centos-67: 
+I, [2016-09-05T14:41:42.365458 #12944]  INFO -- default-centos-67:   2:  # Cookbook Name:: mysql
+I, [2016-09-05T14:41:42.365458 #12944]  INFO -- default-centos-67:   3:  # Recipe:: default
+I, [2016-09-05T14:41:42.365458 #12944]  INFO -- default-centos-67:   4:  #
+I, [2016-09-05T14:41:42.365458 #12944]  INFO -- default-centos-67:   5:  # Copyright 2016, YOUR_COMPANY_NAME
+I, [2016-09-05T14:41:42.365458 #12944]  INFO -- default-centos-67:   6:  #
+I, [2016-09-05T14:41:42.365458 #12944]  INFO -- default-centos-67:   7:  # All rights reserved - Do Not Redistribute
+I, [2016-09-05T14:41:42.365958 #12944]  INFO -- default-centos-67:   8:  #
+I, [2016-09-05T14:41:42.365958 #12944]  INFO -- default-centos-67:   9>> Mysql script to check and start the service
+I, [2016-09-05T14:41:42.365958 #12944]  INFO -- default-centos-67:  10:  include_recipe 'mysql::server'
+I, [2016-09-05T14:41:42.365958 #12944]  INFO -- default-centos-67:  11:  include_recipe 'mysql::ruby'
+I, [2016-09-05T14:41:42.365958 #12944]  INFO -- default-centos-67:  12:  include_recipe 'database'
+I, [2016-09-05T14:41:42.365958 #12944]  INFO -- default-centos-67:  13:  
+I, [2016-09-05T14:41:42.365958 #12944]  INFO -- default-centos-67:  14:  # Create a path to the SQL file in the Chef cache.
+I, [2016-09-05T14:41:42.365958 #12944]  INFO -- default-centos-67:  15:  create_tables_script_path = File.join(Chef::Config[:file_cache_path], 'create-tables.sql')
+I, [2016-09-05T14:41:42.365958 #12944]  INFO -- default-centos-67:  16:  
+I, [2016-09-05T14:41:42.366458 #12944]  INFO -- default-centos-67:  17:  connection_params = {
+I, [2016-09-05T14:41:42.366458 #12944]  INFO -- default-centos-67:  18:    :username => node['database']['root_username'],
+I, [2016-09-05T14:41:42.366458 #12944]  INFO -- default-centos-67: 
+I, [2016-09-05T14:41:42.366458 #12944]  INFO -- default-centos-67: Platform:
+I, [2016-09-05T14:41:42.366458 #12944]  INFO -- default-centos-67: ---------
+I, [2016-09-05T14:41:42.366458 #12944]  INFO -- default-centos-67: x86_64-linux
+I, [2016-09-05T14:41:42.366458 #12944]  INFO -- default-centos-67: 
+I, [2016-09-05T14:41:42.366458 #12944]  INFO -- default-centos-67: 
+I, [2016-09-05T14:41:42.366958 #12944]  INFO -- default-centos-67: Running handlers:
+I, [2016-09-05T14:41:42.366958 #12944]  INFO -- default-centos-67: [2016-09-05T09:11:41+00:00] ERROR: Running exception handlers
+I, [2016-09-05T14:41:42.366958 #12944]  INFO -- default-centos-67: Running handlers complete
+I, [2016-09-05T14:41:42.366958 #12944]  INFO -- default-centos-67: [2016-09-05T09:11:41+00:00] ERROR: Exception handlers complete
+I, [2016-09-05T14:41:42.510476 #12944]  INFO -- default-centos-67: Chef Client failed. 0 resources updated in 11 seconds
+I, [2016-09-05T14:41:42.634992 #12944]  INFO -- default-centos-67: [2016-09-05T09:11:42+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2016-09-05T14:41:42.635492 #12944]  INFO -- default-centos-67: [2016-09-05T09:11:42+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+I, [2016-09-05T14:41:42.636492 #12944]  INFO -- default-centos-67: [2016-09-05T09:11:42+00:00] ERROR: No resource, method, or local variable named `check' for `Chef::Recipe "default"'
+I, [2016-09-05T14:41:43.040043 #12944]  INFO -- default-centos-67: [2016-09-05T09:11:42+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+E, [2016-09-05T14:41:44.242696 #12944] ERROR -- default-centos-67: Converge failed on instance <default-centos-67>.
+E, [2016-09-05T14:41:44.243196 #12944] ERROR -- default-centos-67: ------Exception-------
+E, [2016-09-05T14:41:44.243196 #12944] ERROR -- default-centos-67: Class: Kitchen::ActionFailed
+E, [2016-09-05T14:41:44.243196 #12944] ERROR -- default-centos-67: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2016-09-05T14:41:44.243196 #12944] ERROR -- default-centos-67: ----------------------
+E, [2016-09-05T14:41:44.243196 #12944] ERROR -- default-centos-67: ------Backtrace-------
+E, [2016-09-05T14:41:44.243196 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/provisioner/base.rb:86:in `rescue in call'
+E, [2016-09-05T14:41:44.243196 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/provisioner/base.rb:89:in `call'
+E, [2016-09-05T14:41:44.243196 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:373:in `block in converge_action'
+E, [2016-09-05T14:41:44.243196 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:513:in `call'
+E, [2016-09-05T14:41:44.243696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:513:in `synchronize_or_call'
+E, [2016-09-05T14:41:44.243696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-09-05T14:41:44.243696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-05T14:41:44.243696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:477:in `action'
+E, [2016-09-05T14:41:44.243696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:369:in `converge_action'
+E, [2016-09-05T14:41:44.243696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-09-05T14:41:44.243696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:347:in `each'
+E, [2016-09-05T14:41:44.243696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-09-05T14:41:44.243696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-09-05T14:41:44.243696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-09-05T14:41:44.244196 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-09-05T14:41:44.244196 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-09-05T14:41:44.244196 #12944] ERROR -- default-centos-67: ----End Backtrace-----
+E, [2016-09-05T14:41:44.244196 #12944] ERROR -- default-centos-67: ---Nested Exception---
+E, [2016-09-05T14:41:44.244196 #12944] ERROR -- default-centos-67: Class: Kitchen::Transport::SshFailed
+E, [2016-09-05T14:41:44.244196 #12944] ERROR -- default-centos-67: Message: SSH exited (1) for command: [sh -c '
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2016-09-05T14:41:44.244196 #12944] ERROR -- default-centos-67: ----------------------
+E, [2016-09-05T14:41:44.244196 #12944] ERROR -- default-centos-67: ------Backtrace-------
+E, [2016-09-05T14:41:44.244196 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/provisioner/base.rb:86:in `rescue in call'
+E, [2016-09-05T14:41:44.244696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/provisioner/base.rb:89:in `call'
+E, [2016-09-05T14:41:44.244696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:373:in `block in converge_action'
+E, [2016-09-05T14:41:44.244696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:513:in `call'
+E, [2016-09-05T14:41:44.244696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:513:in `synchronize_or_call'
+E, [2016-09-05T14:41:44.244696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-09-05T14:41:44.244696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-05T14:41:44.244696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:477:in `action'
+E, [2016-09-05T14:41:44.244696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:369:in `converge_action'
+E, [2016-09-05T14:41:44.244696 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-09-05T14:41:44.245196 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:347:in `each'
+E, [2016-09-05T14:41:44.245196 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-09-05T14:41:44.245196 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:138:in `converge'
+E, [2016-09-05T14:41:44.245196 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-09-05T14:41:44.245196 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-09-05T14:41:44.245196 #12944] ERROR -- default-centos-67: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-09-05T14:41:44.245196 #12944] ERROR -- default-centos-67: ----End Backtrace-----

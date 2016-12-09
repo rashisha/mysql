@@ -1,0 +1,107 @@
+I, [2016-09-05T11:31:51.721153 #11916]  INFO -- default-redhat-66: -----> Creating <default-redhat-66>...
+I, [2016-09-05T11:31:55.449398 #11916]  INFO -- default-redhat-66: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2016-09-05T11:31:55.759460 #11916]  INFO -- default-redhat-66: ==> default: Box 'redhat-6.6' could not be found. Attempting to find and install...
+I, [2016-09-05T11:31:55.759460 #11916]  INFO -- default-redhat-66:     default: Box Provider: virtualbox
+I, [2016-09-05T11:31:55.759460 #11916]  INFO -- default-redhat-66:     default: Box Version: >= 0
+I, [2016-09-05T11:31:55.940996 #11916]  INFO -- default-redhat-66: ==> default: Box file was not detected as metadata. Adding it directly...
+I, [2016-09-05T11:31:55.940996 #11916]  INFO -- default-redhat-66: ==> default: Adding box 'redhat-6.6' (v0) for provider: virtualbox
+I, [2016-09-05T11:31:55.947998 #11916]  INFO -- default-redhat-66:     default: Downloading: redhat-6.6
+I, [2016-09-05T11:31:56.124033 #11916]  INFO -- default-redhat-66: [K    default: 
+I, [2016-09-05T11:31:56.131034 #11916]  INFO -- default-redhat-66: An error occurred while downloading the remote file. The error
+I, [2016-09-05T11:31:56.131034 #11916]  INFO -- default-redhat-66: message, if any, is reproduced below. Please fix this error and try
+I, [2016-09-05T11:31:56.131034 #11916]  INFO -- default-redhat-66: again.
+I, [2016-09-05T11:31:56.131034 #11916]  INFO -- default-redhat-66: 
+I, [2016-09-05T11:31:56.131034 #11916]  INFO -- default-redhat-66: Couldn't open file /C:/opscode/chef-repo/cookbooks/mysql/.kitchen/kitchen-vagrant/kitchen-mysql-default-redhat-66/redhat-6.6
+E, [2016-09-05T11:31:56.205049 #11916] ERROR -- default-redhat-66: Create failed on instance <default-redhat-66>.
+E, [2016-09-05T11:31:56.205049 #11916] ERROR -- default-redhat-66: ------Exception-------
+E, [2016-09-05T11:31:56.205049 #11916] ERROR -- default-redhat-66: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2016-09-05T11:31:56.205049 #11916] ERROR -- default-redhat-66: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'redhat-6.6' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Box file was not detected as metadata. Adding it directly...
+==> default: Adding box 'redhat-6.6' (v0) for provider: virtualbox
+    default: Downloading: redhat-6.6
+[K    default:
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+Couldn't open file /C:/opscode/chef-repo/cookbooks/mysql/.kitchen/kitchen-vagrant/kitchen-mysql-default-redhat-66/redhat-6.6
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2016-09-05T11:31:56.205549 #11916] ERROR -- default-redhat-66: ----------------------
+E, [2016-09-05T11:31:56.205549 #11916] ERROR -- default-redhat-66: ------Backtrace-------
+E, [2016-09-05T11:31:56.205549 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/shell_out.rb:73:in `rescue in run_command'
+E, [2016-09-05T11:31:56.205549 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/shell_out.rb:61:in `run_command'
+E, [2016-09-05T11:31:56.205549 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:343:in `run_command'
+E, [2016-09-05T11:31:56.205549 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:302:in `run'
+E, [2016-09-05T11:31:56.205549 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:373:in `run_vagrant_up'
+E, [2016-09-05T11:31:56.205549 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:96:in `create'
+E, [2016-09-05T11:31:56.206049 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:449:in `public_send'
+E, [2016-09-05T11:31:56.206049 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:449:in `block in perform_action'
+E, [2016-09-05T11:31:56.206049 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:510:in `call'
+E, [2016-09-05T11:31:56.206049 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:510:in `block in synchronize_or_call'
+E, [2016-09-05T11:31:56.206049 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:508:in `synchronize'
+E, [2016-09-05T11:31:56.206049 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:508:in `synchronize_or_call'
+E, [2016-09-05T11:31:56.206049 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-09-05T11:31:56.206049 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-05T11:31:56.206549 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:477:in `action'
+E, [2016-09-05T11:31:56.206549 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:449:in `perform_action'
+E, [2016-09-05T11:31:56.206549 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:359:in `create_action'
+E, [2016-09-05T11:31:56.206549 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-09-05T11:31:56.206549 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:347:in `each'
+E, [2016-09-05T11:31:56.206549 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-09-05T11:31:56.206549 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:127:in `create'
+E, [2016-09-05T11:31:56.206549 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-09-05T11:31:56.206549 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-09-05T11:31:56.206549 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-09-05T11:31:56.206549 #11916] ERROR -- default-redhat-66: ----End Backtrace-----
+E, [2016-09-05T11:31:56.206549 #11916] ERROR -- default-redhat-66: ---Nested Exception---
+E, [2016-09-05T11:31:56.207050 #11916] ERROR -- default-redhat-66: Class: Mixlib::ShellOut::ShellCommandFailed
+E, [2016-09-05T11:31:56.207050 #11916] ERROR -- default-redhat-66: Message: Expected process to exit with [0], but received '1'
+---- Begin output of vagrant up --no-provision --provider virtualbox ----
+STDOUT: Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Box 'redhat-6.6' could not be found. Attempting to find and install...
+    default: Box Provider: virtualbox
+    default: Box Version: >= 0
+==> default: Box file was not detected as metadata. Adding it directly...
+==> default: Adding box 'redhat-6.6' (v0) for provider: virtualbox
+    default: Downloading: redhat-6.6
+[K    default:
+STDERR: An error occurred while downloading the remote file. The error
+message, if any, is reproduced below. Please fix this error and try
+again.
+
+Couldn't open file /C:/opscode/chef-repo/cookbooks/mysql/.kitchen/kitchen-vagrant/kitchen-mysql-default-redhat-66/redhat-6.6
+---- End output of vagrant up --no-provision --provider virtualbox ----
+Ran vagrant up --no-provision --provider virtualbox returned 1
+E, [2016-09-05T11:31:56.207050 #11916] ERROR -- default-redhat-66: ----------------------
+E, [2016-09-05T11:31:56.207050 #11916] ERROR -- default-redhat-66: ------Backtrace-------
+E, [2016-09-05T11:31:56.207050 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/shell_out.rb:73:in `rescue in run_command'
+E, [2016-09-05T11:31:56.207050 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/shell_out.rb:61:in `run_command'
+E, [2016-09-05T11:31:56.207050 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:343:in `run_command'
+E, [2016-09-05T11:31:56.207050 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:302:in `run'
+E, [2016-09-05T11:31:56.207050 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:373:in `run_vagrant_up'
+E, [2016-09-05T11:31:56.207550 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/kitchen-vagrant-0.20.0/lib/kitchen/driver/vagrant.rb:96:in `create'
+E, [2016-09-05T11:31:56.207550 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:449:in `public_send'
+E, [2016-09-05T11:31:56.207550 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:449:in `block in perform_action'
+E, [2016-09-05T11:31:56.207550 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:510:in `call'
+E, [2016-09-05T11:31:56.207550 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:510:in `block in synchronize_or_call'
+E, [2016-09-05T11:31:56.207550 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:508:in `synchronize'
+E, [2016-09-05T11:31:56.207550 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:508:in `synchronize_or_call'
+E, [2016-09-05T11:31:56.207550 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:478:in `block in action'
+E, [2016-09-05T11:31:56.207550 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/2.1.0/benchmark.rb:279:in `measure'
+E, [2016-09-05T11:31:56.207550 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:477:in `action'
+E, [2016-09-05T11:31:56.207550 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:449:in `perform_action'
+E, [2016-09-05T11:31:56.208050 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:359:in `create_action'
+E, [2016-09-05T11:31:56.208050 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:348:in `block in transition_to'
+E, [2016-09-05T11:31:56.208050 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:347:in `each'
+E, [2016-09-05T11:31:56.208050 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:347:in `transition_to'
+E, [2016-09-05T11:31:56.208050 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/instance.rb:127:in `create'
+E, [2016-09-05T11:31:56.208050 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/command.rb:201:in `public_send'
+E, [2016-09-05T11:31:56.208050 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/command.rb:201:in `run_action_in_thread'
+E, [2016-09-05T11:31:56.208050 #11916] ERROR -- default-redhat-66: C:/opscode/chefdk/embedded/lib/ruby/gems/2.1.0/gems/test-kitchen-1.10.2/lib/kitchen/command.rb:173:in `block (2 levels) in run_action'
+E, [2016-09-05T11:31:56.208050 #11916] ERROR -- default-redhat-66: ----End Backtrace-----
